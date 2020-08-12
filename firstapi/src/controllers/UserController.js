@@ -15,4 +15,14 @@ module.exports = {
     response.writeHead(200, {'Content-Type': 'application/json'});
     response.end(JSON.stringify(users));
   },
+
+  getUserById(request,response)
+  {
+    const { id } = request.params;
+
+    const user = users.find((user) => user.id == Number(id));
+
+    response.writeHead(200, {'Content-Type': 'application/json'});
+    response.end(JSON.stringify(user));
+  }
 };
