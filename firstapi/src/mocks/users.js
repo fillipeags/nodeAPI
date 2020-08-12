@@ -1,16 +1,16 @@
 module.exports =[
   {
-    id: '1',
+    id: 1,
     name: 'Fillipe'
   },
 
   {
-    id: '2',
+    id: 2,
     name: 'João'
   },
 
   {
-    id: '3',
+    id: 3,
     name: 'Paula'
   },
 ]
